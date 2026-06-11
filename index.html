@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthdays</title>
+    
+    <link rel="stylesheet" href="style_v3.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <a href="" class="home_link">Home</a>
+
+        <div class="dropdown">
+            <button id="dropbtn" class="dropbtn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" class="menu-link" target="_blank">Clip</a>
+                    <a href="About_Flower.html" class="menu-link" target="_blank">About</a>
+                    <a href="https://www.instagram.com/_plaslid_?igsh=MXR6M2JvdWhnMndjMQ==" class="menu-link" target="_blank">Instagram</a>
+                </div>
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("dropbtn").classList.toggle("active");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.closest('.dropdown')) {
+                document.getElementById("myDropdown").classList.remove("show");
+                document.getElementById("dropbtn").classList.remove("active");
+
+            }
+        }
+    </script>
+
+</body>
+</html>
